@@ -1,0 +1,178 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',sans-serif;
+}
+header, middle, bottom {
+  color: #eee;
+  background: #58b2dc;
+  text-align: center;
+  font-size: 12px;
+}
+main {
+  bottom: 0;
+  padding: 0 10px 10px 10px;
+}
+@media screen and (max-width: 720px) {
+  main {
+    padding-bottom: 4em;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.fixedToBottomNext {
+  position: absolute;
+  bottom: 7em;
+  width: 100%;
+  /*padding-bottom: 3em;*/
+}
+.fixedToBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+  .fixedToTopLeft--2col {
+    position: fixed;
+    width: 240px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    padding-bottom: 4em;
+  }
+  .fixedToMiddleLeft--2col {
+    position: fixed;
+    width: 240px;
+    top: 10em;
+    left: 0;
+    bottom: 4em;
+    overflow: auto;
+    /*padding-bottom: 4em;*/
+  }
+  .fixedToBottomLeft--2col {
+    position: fixed;
+    width: 240px;
+    left: 0;
+    bottom: 0;
+  }
+  .fixedToRight--2col {
+    margin-left: 240px;
+  }
+}
+
+
+.intro_text {
+  max-width: 35em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 10px;
+}
+/*@media screen and (max-width: 720px) {
+  .intro_text {
+    display: none;
+  }
+}*/
+/*@media screen and (min-width: 720px) {*/
+  .elsewhere {
+    margin: auto;
+    padding: 10px;
+  }
+/*}*/
+.elsewhere_link {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  font-size: 22px;
+  text-align: center;
+  margin: 5px;
+}
+
+/*@media screen and (max-width: 720px) {
+  .feed-info {
+    display: block;
+    margin: 0 auto;
+  }
+}*/
+
+.feed-thumbnail {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  background: #ccc;
+}
+@media screen and (max-width: 720px) {
+  .feed-thumbnail {
+    width: 80px;
+    height: 80px;
+  }
+}
+.feed-thumbnail img {
+  border-radius: 5px;
+  max-width: 100%
+}
+
+.feed-type-icon, .episode-type-icon {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  color: #f0f0f0;
+  font-size: 4em;
+  /*margin-left: 10px;*/
+  z-index: -100;
+}
+
+.responsive-video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Apply a natural box layout model to all elements */
+/* from: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+/* Nicolas Gallagher's micro clearfix hack */
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.text_ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
