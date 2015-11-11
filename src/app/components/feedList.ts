@@ -38,13 +38,6 @@ import { FeedSummaryComponent } from './feedSummary';
       (click)="gotoFeedDetail(feed)">
     </li>
   </ul>
-  
-  <!-- <div class="clearfix feed-list-bottom">
-    <div class="add-button fa fa-plus-square-o" *ng-if="!bNewListFormVisible" (click)="toggleNewListForm()"></div>
-    <div class="close-button fa fa-remove" *ng-if="bNewListFormVisible" (click)="toggleNewListForm()"></div>
-    <add-list *ng-if="bNewListFormVisible"></add-list>
-  </div>
-  <add-list></add-list> -->
   `
 })
 export class FeedListComponent {
